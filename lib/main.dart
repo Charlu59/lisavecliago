@@ -1,5 +1,44 @@
+/*import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+// import 'package:sentry_flutter/sentry_flutter.dart';
+import 'package:wakelock_plus/wakelock_plus.dart';
+
+import 'navigator/root_navigator.dart';
+
+const String kSentryKey =
+    'https://46b76471f4d9279188eb15489105c40a@o4506288326705152.ingest.sentry.io/4506288327819264';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  WakelockPlus.enable();
+  await SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+  ]);
+  // await SentryFlutter.init(
+  //   (options) {
+  //     options.dsn = kSentryKey;
+  //     options.tracesSampleRate = 1.0;
+  //   },
+  //   appRunner: () => runApp(const MyApp()),
+  // );
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return RootNavigator();
+  }
+}
+*/
+
+import 'dart:io';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:path_provider/path_provider.dart';
 
 import 'audio_player.dart';
 import 'audio_recorder.dart';
@@ -39,12 +78,18 @@ class _MyAppState extends State<MyApp> {
                   ),
                 )
               : Recorder(
-                  onStop: (path) {
+                  onStop: (path) async {
                     if (kDebugMode) print('Recorded file path: $path');
-                    //TODO: send to Whisper AI
+
+                    const fileName = 'audio_chunk.pcm'; // Example file name
+
+                    Directory appDocumentsDirectory =
+                        await getApplicationDocumentsDirectory();
+                    File file = File('${appDocumentsDirectory.path}/$fileName');
+
                     //
                     setState(() {
-                      audioPath = path;
+                      audioPath = file.path;
                       showPlayer = true;
                     });
                   },

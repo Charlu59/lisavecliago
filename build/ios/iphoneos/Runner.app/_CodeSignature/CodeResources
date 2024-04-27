@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		SeRNBeAW0d4+O5YyKX2hFUkfWAU=
+		OQsZGz2rf3+ZWtOxR9efbdHUF0o=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		XXmpVxNnCpN7l34y8BM1v4KZQJg=
+		tOtnD7/MSrEqNpy4tWpmxcKnkGU=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
-		7fnP59cJ0LjYbv2U3q7s119QZck=
+		A4kkYplFiSFG+D7HvA2HguthHks=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		Cj1ytMm3LNbqRKwKK83EreSPq/Y=
+		V99Jax8nnVuM9zjmoNCR9tFRfOA=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		x7Xz1x0wqPWoLQbn1XnuHcY5MsI=
+		hxQsEvxDkH/txjUJe91OuKGw/nc=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		9sE3p2jct2fi/rzQb9fcnaG9OU0=
+		gpAwZ4Dpsz3Am70VRRu4B7RjQuw=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -91,6 +91,10 @@
 		<key>Frameworks/App.framework/flutter_assets/packages/record_web/assets/js/record.worklet.js</key>
 		<data>
 		5wipmf4TiXplfwAu8bBEQkgmmqE=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/wakelock_plus/assets/no_sleep.js</key>
+		<data>
+		4X7PZ95hkgUE15GU2+5c1VKgHP0=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/shaders/ink_sparkle.frag</key>
 		<data>
@@ -102,7 +106,7 @@
 		</data>
 		<key>Frameworks/Flutter.framework/Flutter</key>
 		<data>
-		E9tEDN9qn2tIYRg/DIlYdzpb9oE=
+		CrfscUu7BQiX8O18PrlNcIBAFYQ=
 		</data>
 		<key>Frameworks/Flutter.framework/Headers/Flutter.h</key>
 		<data>
@@ -198,7 +202,27 @@
 		</data>
 		<key>Frameworks/audioplayers_darwin.framework/audioplayers_darwin</key>
 		<data>
-		k1ZMo8lBWYdyP0pdLiRbDxGvnJU=
+		IEXkIHYIb34kZf2usG7ng+Mu5nw=
+		</data>
+		<key>Frameworks/package_info_plus.framework/Info.plist</key>
+		<data>
+		5opJOJr4Hy7FaYl/ar+xO+++FGc=
+		</data>
+		<key>Frameworks/package_info_plus.framework/_CodeSignature/CodeResources</key>
+		<data>
+		JouQBCLW8FAATWqezQPyjACF2QU=
+		</data>
+		<key>Frameworks/package_info_plus.framework/package_info_plus</key>
+		<data>
+		Roz0CEaOAJ25O+qxUW82D+aWyyA=
+		</data>
+		<key>Frameworks/package_info_plus.framework/package_info_plus_privacy.bundle/Info.plist</key>
+		<data>
+		4jMiCJfrbKT72cdJjlOrlqrVXZs=
+		</data>
+		<key>Frameworks/package_info_plus.framework/package_info_plus_privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		/LX0ZlwxwIAIhjZaDB8EiH5KpXA=
 		</data>
 		<key>Frameworks/path_provider_foundation.framework/Info.plist</key>
 		<data>
@@ -210,7 +234,7 @@
 		</data>
 		<key>Frameworks/path_provider_foundation.framework/path_provider_foundation</key>
 		<data>
-		+YNp0BiH9Nj8nHGaeyIZEVE6Wqc=
+		v81rWcYfobDcM1pkjFU4Ddba9PE=
 		</data>
 		<key>Frameworks/path_provider_foundation.framework/path_provider_foundation_privacy.bundle/Info.plist</key>
 		<data>
@@ -230,7 +254,27 @@
 		</data>
 		<key>Frameworks/record_darwin.framework/record_darwin</key>
 		<data>
-		vW6kxLV2r56tn3PIsrLwgpMH4+c=
+		VjF75UB/GAEiZCrMGG+9qAMHW6c=
+		</data>
+		<key>Frameworks/wakelock_plus.framework/Info.plist</key>
+		<data>
+		jwxfr/3fgDyfTDVixBUm7IcGgwo=
+		</data>
+		<key>Frameworks/wakelock_plus.framework/_CodeSignature/CodeResources</key>
+		<data>
+		88627mgBBR2p9grwUs8O1If6mxo=
+		</data>
+		<key>Frameworks/wakelock_plus.framework/thermal.bundle/Info.plist</key>
+		<data>
+		g6EZFJETMp0Lxzg5gA2ISk1A4As=
+		</data>
+		<key>Frameworks/wakelock_plus.framework/thermal.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		/LX0ZlwxwIAIhjZaDB8EiH5KpXA=
+		</data>
+		<key>Frameworks/wakelock_plus.framework/wakelock_plus</key>
+		<data>
+		TCfK/6ka7qyyZE7w+KI4FMqziBg=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -321,7 +365,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1JX79pbAPHlEpjY0rX/liDksL56nPrjwXZ3iGhpeHvg=
+			Rcu4Ui4RBhLfUidPhkH6ObAaCrztlaoLjZ/9Kt3+QJU=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -335,21 +379,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			knkGs/EDhwwGZRETY9UyBQe0FE0lBinGnaszij5Kpck=
+			4GJ3CEvnNXRlxy9qkOcrm1MxrWFGJ8wSnf1BjcqbKDU=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WGLZ1YY3KZ2iavxIohGZrMMKHKgoE03Cp0JKA4ohmrY=
+			GyQxkDDn2PSW9JdFqqpJjEqqT+NHAhEQTMikrbltILI=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r1uBh9ZVtGPMeDQBAyZEq5pOdt9p0P3FBZahM0CPpb0=
+			l28R5iG+uB7DKixsvc57m8AXZeptS5mgTCJsqIu/96o=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -363,7 +407,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pujRHaa9s0EUDwrOcWALs292YGA4LSTDyWGNagS8bKQ=
+			s5oe1y9RYBNziem1umDWsd6lB0Abby+jvv3G5q210VI=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -384,7 +428,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			r1XiLwcYFU7uJaaktLtGcH7kQ53FepyIqpE0KgAcO20=
+			l7ifabdV6kZkuYAVuA7WfnUZuPKT6EeagDHGFdx7WDw=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -399,6 +443,13 @@
 			<key>hash2</key>
 			<data>
 			hkPdAg583tT9IxLhQaZnzx/6lErDQk7E4C4Xc6c35+c=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/wakelock_plus/assets/no_sleep.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3OTu8LGXtkCtaqqyIo7h7n3M+L1ta13lSE3RvRZDCng=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/shaders/ink_sparkle.frag</key>
@@ -419,7 +470,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tpfpUl8T1R/d5PlQ6ycUXd/vAeJQ1cPK+KHAL7ZjHZM=
+			zuWi6gf/FI9WN3tBr5VaSbbaJ5Et6o9njL6sXnzZqzc=
 			</data>
 		</dict>
 		<key>Frameworks/Flutter.framework/Headers/Flutter.h</key>
@@ -587,7 +638,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qq4b3HXgNweqGnsQ8zn8AcZTBuFlOKeqjPXzqKPb/os=
+			MtBip2Icy4VvFaxUjooqvSHHwZ1ApZDvLFXhxA/62sM=
+			</data>
+		</dict>
+		<key>Frameworks/package_info_plus.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iOO8gOvzGT3XaCArIYgy69oCZ4vhXfNOQwA77x0aOTY=
+			</data>
+		</dict>
+		<key>Frameworks/package_info_plus.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			enmjZx1w3kfeLsbj8hiJI9jMeqHkVaXZz+/PqJbsen4=
+			</data>
+		</dict>
+		<key>Frameworks/package_info_plus.framework/package_info_plus</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			C+rk346fEbkzSQJKivP8zPZV3/kf3zI7e6mdBKP5JBA=
+			</data>
+		</dict>
+		<key>Frameworks/package_info_plus.framework/package_info_plus_privacy.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EcGnw4Pl6Je+XeEGnQ/SnRvdUVM+Qt5i3RjIzqX4mJE=
+			</data>
+		</dict>
+		<key>Frameworks/package_info_plus.framework/package_info_plus_privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bS2g2NkwIn1CjB2TY7CtbjoS4sm2jFzilxWKdBL8jDE=
 			</data>
 		</dict>
 		<key>Frameworks/path_provider_foundation.framework/Info.plist</key>
@@ -608,7 +694,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KLvf/jGFnu/s9TpP9/wugxIV2KlR/vx5p7qKgcCkRJE=
+			UPFaFORQsdj3lCd6VcnOReH721ngN9ZeIIEUXKtzH70=
 			</data>
 		</dict>
 		<key>Frameworks/path_provider_foundation.framework/path_provider_foundation_privacy.bundle/Info.plist</key>
@@ -643,7 +729,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			++hqv+mLAyoW9N5exdpZfSD5+3iWNVN+qs4JYEMdeIk=
+			1pXSkGDTUnvVgbF/JSRVUJpOv98zasgwnbixg0nVEzw=
+			</data>
+		</dict>
+		<key>Frameworks/wakelock_plus.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TwGkAyyHqHC6BCsfOjbmO4PVyJpXwAcI8sXK/HcXNAk=
+			</data>
+		</dict>
+		<key>Frameworks/wakelock_plus.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RgcTTrD9oda5YZnmFClqmUXqeC6p33sLF1FLefDDm+4=
+			</data>
+		</dict>
+		<key>Frameworks/wakelock_plus.framework/thermal.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8aPHeXo5qnHx1eyuGQYW8Y6kQqrqa/5ITjW9V5owGw4=
+			</data>
+		</dict>
+		<key>Frameworks/wakelock_plus.framework/thermal.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bS2g2NkwIn1CjB2TY7CtbjoS4sm2jFzilxWKdBL8jDE=
+			</data>
+		</dict>
+		<key>Frameworks/wakelock_plus.framework/wakelock_plus</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ORcHxT6uA9SuRnbj8yIxV7P1Bws1S/x16shrrPlyzXA=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>
