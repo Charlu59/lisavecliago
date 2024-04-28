@@ -1,4 +1,4 @@
-/*import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 // import 'package:sentry_flutter/sentry_flutter.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
@@ -32,70 +32,61 @@ class MyApp extends StatelessWidget {
     return RootNavigator();
   }
 }
-*/
 
-import 'dart:io';
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
-import 'package:path_provider/path_provider.dart';
+// import 'package:flutter/foundation.dart';
+// import 'package:flutter/material.dart';
 
-import 'audio_player.dart';
-import 'audio_recorder.dart';
+// import 'audio_player.dart';
+// import 'audio_recorder.dart';
 
-void main() => runApp(const MyApp());
+// void main() => runApp(const MyApp());
 
-class MyApp extends StatefulWidget {
-  const MyApp({super.key});
+// class MyApp extends StatefulWidget {
+//   const MyApp({super.key});
 
-  @override
-  State<MyApp> createState() => _MyAppState();
-}
+//   @override
+//   State<MyApp> createState() => _MyAppState();
+// }
 
-class _MyAppState extends State<MyApp> {
-  bool showPlayer = false;
-  String? audioPath;
+// class _MyAppState extends State<MyApp> {
+//   bool showPlayer = false;
+//   String? audioPath;
 
-  @override
-  void initState() {
-    showPlayer = false;
-    super.initState();
-  }
+//   @override
+//   void initState() {
+//     showPlayer = false;
+//     super.initState();
+//   }
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: showPlayer
-              ? Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 25),
-                  child: AudioPlayer(
-                    source: audioPath!,
-                    onDelete: () {
-                      setState(() => showPlayer = false);
-                    },
-                  ),
-                )
-              : Recorder(
-                  onStop: (path) async {
-                    if (kDebugMode) print('Recorded file path: $path');
-
-                    const fileName = 'audio_chunk.pcm'; // Example file name
-
-                    Directory appDocumentsDirectory =
-                        await getApplicationDocumentsDirectory();
-                    File file = File('${appDocumentsDirectory.path}/$fileName');
-
-                    //
-                    setState(() {
-                      audioPath = file.path;
-                      showPlayer = true;
-                    });
-                  },
-                ),
-        ),
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: Scaffold(
+//         body: Center(
+//           child: showPlayer
+//               ? Padding(
+//                   padding: const EdgeInsets.symmetric(horizontal: 25),
+//                   child: AudioPlayer(
+//                     source: audioPath!,
+//                     onDelete: () {
+//                       setState(() => showPlayer = false);
+//                     },
+//                   ),
+//                 )
+//               : Recorder(
+//                   onStop: (path) {
+//                     if (kDebugMode) print('Recorded file path: $path');
+//                     //TODO: send to Whisper AI
+//                     //
+//                     setState(() {
+//                       audioPath = path;
+//                       showPlayer = true;
+//                     });
+//                   },
+//                 ),
+//         ),
+//       ),
+//     );
+//   }
+// }

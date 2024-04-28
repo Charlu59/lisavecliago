@@ -43,7 +43,7 @@ class RecorderService {
     try {
       if (await _audioRecorder.hasPermission()) {
         print("_audioRecorder has permission");
-        const encoder = AudioEncoder.pcm16bits;
+        const encoder = AudioEncoder.aacLc;
 
         if (!await _isEncoderSupported(encoder)) {
           return;
@@ -58,36 +58,9 @@ class RecorderService {
         Directory appDocumentsDirectory =
             await getApplicationDocumentsDirectory();
 
-        // Record to file
-        final b = <Uint8List>[];
-        final stream = await _audioRecorder.startStream(config);
-        stream.listen(
-          (data) {
-            b.add(data);
-            print("data : ${b.length}");
-            if (b.length == 20) {
-              print("Generate file");
-
-              final chunk =
-                  Uint8List.fromList(b.expand((element) => element).toList());
-
-              const fileName = 'audio_chunk.pcm'; // Example file name
-
-              File file = File('${appDocumentsDirectory.path}/$fileName');
-              file.writeAsBytes(chunk).then((audioFile) {
-                print("File saved : ${audioFile.path}");
-
-                Future.delayed(1.seconds, () async {
-                  print("Play file : ${audioFile.path}");
-                  // Play file
-                  AudioPlayer audioPlayer = AudioPlayer();
-                  await audioPlayer.play(BytesSource(chunk));
-                });
-              });
-            }
-          },
-          onDone: () => print("onDone"),
-        );
+        const fileName = 'audio_chunk.m4a'; // Example file name
+        File file = File('${appDocumentsDirectory.path}/$fileName');
+        _audioRecorder.start(config, path: file.path);
 
         // Record to stream
         // await recordStream(_audioRecorder, config);
@@ -96,9 +69,12 @@ class RecorderService {
 
         // _startTimer();
 
-        Future.delayed(10.seconds, () {
+        Future.delayed(5.seconds, () {
           print("Stop recording");
           _audioRecorder.stop();
+
+          AudioPlayer audioPlayer = AudioPlayer();
+          audioPlayer.play(DeviceFileSource(file.path));
         });
       }
     } catch (e) {
