@@ -5,6 +5,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:record/record.dart';
 import 'package:supercharged/supercharged.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:livespeechtotext/livespeechtotext.dart';
 
 class RecorderService {
   static final RecorderService _singleton = RecorderService._internal();
@@ -14,6 +15,7 @@ class RecorderService {
   RecorderService._internal();
 
   final AudioRecorder _audioRecorder = AudioRecorder();
+  final Livespeechtotext _livespeechtotextPlugin = Livespeechtotext();
   int _recordDuration = 0;
   Timer? _timer;
   StreamSubscription<RecordState>? _recordSub;
@@ -22,17 +24,24 @@ class RecorderService {
   Amplitude? _amplitude;
 
   Future<void> startRecording() async {
-    _recordSub = _audioRecorder.onStateChanged().listen((recordState) {
-      print("recordState : $recordState");
-    });
+    _livespeechtotextPlugin.setLocale('fr-FR');
 
-    _amplitudeSub = _audioRecorder
-        .onAmplitudeChanged(const Duration(milliseconds: 300))
-        .listen((amp) {
-      print("amp : ${amp.current}");
+    _livespeechtotextPlugin.addEventListener('success', (text) {
+      print("text : $text");
     });
+    _livespeechtotextPlugin.start();
 
-    await _start();
+    // _recordSub = _audioRecorder.onStateChanged().listen((recordState) {
+    //   print("recordState : $recordState");
+    // });
+
+    // _amplitudeSub = _audioRecorder
+    //     .onAmplitudeChanged(const Duration(milliseconds: 300))
+    //     .listen((amp) {
+    //   print("amp : ${amp.current}");
+    // });
+
+    // await _start();
   }
 
   Future<void> stopRecording() async {

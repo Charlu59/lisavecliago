@@ -9,6 +9,7 @@ const String kSentryKey =
     'https://46b76471f4d9279188eb15489105c40a@o4506288326705152.ingest.sentry.io/4506288327819264';
 
 Future<void> main() async {
+  print("main");
   WidgetsFlutterBinding.ensureInitialized();
   WakelockPlus.enable();
   await SystemChrome.setPreferredOrientations([
