@@ -1,14 +1,20 @@
 import 'package:lazx/lazx.dart';
+import 'package:lisavecliago/screens/reading/word.dart';
+import 'package:lisavecliago/service/ai_service.dart';
 
 import '../../service/recorder_service.dart';
 
 class SplashViewModel extends LazxViewModel {
-  @override
-  List<LazxObservable> get props => [];
+  LazxData<List<Word>> words = LazxData<List<Word>>([]);
 
-  launchListening() {
+  @override
+  List<LazxObservable> get props => [words];
+
+  launchListening() async {
     print("Listening");
-    RecorderService().startRecording();
+    const String phoneme = "ɑ̃";
+    List<Word> allWords = await AIService.retrieveWords(phoneme);
+    words.push(allWords);
   }
 
   @override
